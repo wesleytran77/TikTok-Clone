@@ -168,3 +168,14 @@ profileTab.forEach(tab=>{
         profilePage.style.visibility= "visible"
     })
 })
+
+
+//for ios to make sure video works
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.myVideo');
+    video.muted = true; // Ensure video is muted
+    video.play().catch((error) => {
+        console.log('Autoplay failed:', error);
+        // Autoplay was prevented, handle accordingly
+    })
+})
