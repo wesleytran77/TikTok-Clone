@@ -1,0 +1,131 @@
+.phoneScreen3{
+    height: 456px;
+    width: 260px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*enable scrolling*/
+    scroll-snap-type: y mandatory; /* Define snapping on the y-axis */
+    overflow-y: auto;  
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */ 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.footerInbox svg{
+    fill: gray;
+}
+
+.phoneScreen3 p{
+    color: gray;
+}
+
+.messageRow{
+    display: flex;
+    align-items: center;
+    padding: 0 .8rem;
+    margin: 7px 0;
+}
+
+.messageRow img{
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+}
+
+.messageSender{
+    font-size: 11px;
+    color: red;
+    font-weight: 300;
+}
+
+.messageSent{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.senderContainer{
+    margin-left: 10px;
+}
+
+
+.footerInbox{
+    border-top: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    z-index: 1000;
+    padding-top: 6px;
+    padding-bottom: 22px;
+    position: sticky;
+}
+
+.postButtonInbox{
+    background-color: black;
+    width: 35px;
+    height: 25px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    position: relative;
+    border: none;
+    font-size: 24px;
+    border-radius: 12px;
+}
+
+.postButton svg{
+    fill: white;
+    width: 10px;
+}
+
+.headerRowInbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 9px;
+}
+
+.headerRowInbox h1{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.plusCircle{
+    width: 9px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.inboxSearch{
+    width: 15px;
+}
+
+.blueFollowers{
+    border-radius: 50%;
+    width: 22px;
+    padding: 8px;
+    height: 22px;
+    background-color: rgb(0, 204, 255);
+    fill: white;
+}
+
+.activitiesNotification{
+    border-radius: 50%;
+    width: 20px;
+    padding: 8.8px;
+    height: 20px;
+    background-color: #fa4880;
+    fill: white;
+}
+
+

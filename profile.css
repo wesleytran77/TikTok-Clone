@@ -1,0 +1,235 @@
+.phoneScreen4{
+    height: 456px;
+    width: 260px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*enable scrolling*/
+    scroll-snap-type: y mandatory; /* Define snapping on the y-axis */
+    overflow-y: auto;  
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */ 
+    background-color: white;
+    display: grid;
+    grid-template-rows: 228px auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.footerProfile{
+    border-top: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    padding-top: 6px;
+    padding-bottom: 22px;
+    position: sticky;
+    bottom: 0;
+}
+
+.footerProfile svg, .footerProfile p{
+    fill: gray;
+    color: gray;
+}
+
+
+.profileInfo{
+    padding-top: 1rem ;
+}
+
+.profileInfo img{
+    margin-top: 11px;
+    border: 3px solid rgb(220, 220, 220);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 15px;
+}
+
+.profileInfo h2{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.followerContainer{
+    margin: auto auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.followerContainer h1{
+    font-size: 13px;
+}
+
+.followerContainer p{
+    font-size: 10px;
+    color: gray;
+    font-weight: 300;
+}
+
+.buttonContainer button{
+    border: none;
+    text-decoration: underline;
+    padding: 8px 12px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    font-size: 11px;
+    margin: 0 2px;
+}
+
+.buttonContainer{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer svg{
+    width: 18px;
+    background-color: rgb(236, 236, 236);
+    padding: 7.4px 5px;
+    margin: 0 2px;
+    border-radius: 6px;
+    padding-left: 7px;
+}
+
+.bio{
+    margin-top: 9px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.postsIcon{
+    fill: black;
+    width: 14px;
+   
+}
+
+.postsIconContainer{
+    position: relative;
+    margin-top: 3px;
+}
+
+
+
+
+.lockIcon{
+    fill: gray;
+    width: 12px;
+}
+
+.iconContainer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 6px;
+}
+
+.underline{
+    background-color: black;
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    /* top: 100%; */
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.repostIcon{
+    width: 18px;
+    fill: gray;
+}
+
+.favoritesIcon{
+    width: 10px;
+    fill: gray;
+}
+
+.heartIcon{
+    width: 15px;
+    fill: gray;
+}
+
+.postGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    border-top: 1px solid rgb(186, 186, 186);
+}
+
+.postGallery img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.postContainer{
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("burger.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.post2{
+    background-image: url("suki.jpeg");
+}
+
+.post3{
+    background-image: url("scout.jpeg");
+}
+
+.post4{
+    background-image: url("shirley.jpeg");
+}
+
+.post5{
+    background-image: url("buzz.jpeg");
+}
+
+.post6{
+    background-image: url("dbz.jpeg");
+}
+
+.post7{
+    background-image: url("coconut\ Small.jpeg");
+}
+
+.post8{
+    background-image: url("portrait.jpeg");
+}
+.post9{
+    background-image: url("shirley2.jpeg");
+}
+
+
+
+
+.postContainer svg{
+    width: 10px;
+    fill: white;
+    margin-left: 5px;
+   
+}
+
+.postContainer p{
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 4px;
+    margin-bottom: 1.5px;
+}
+
