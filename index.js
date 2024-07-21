@@ -7,6 +7,7 @@ let scale = 1
 
 zoomInButton.addEventListener('click', () => {
     scale += 0.5;
+    startingScreen.style.transform = `translate(-50%, -50%) scale(${scale})`
     friendsPage.style.transform = `translate(-50%, -50%) scale(${scale})`
     profilePage.style.transform = `translate(-50%, -50%) scale(${scale})`
     inboxPage.style.transform = `translate(-50%, -50%) scale(${scale})`
@@ -16,6 +17,7 @@ zoomInButton.addEventListener('click', () => {
 
 zoomOutButton.addEventListener('click', () => {
     scale = Math.max(0.1, scale - 0.5);
+    startingScreen.style.transform = `translate(-50%, -50%) scale(${scale})`
     friendsPage.style.transform = `translate(-50%, -50%) scale(${scale})`
     profilePage.style.transform = `translate(-50%, -50%) scale(${scale})`
     inboxPage.style.transform = `translate(-50%, -50%) scale(${scale})`
@@ -191,6 +193,8 @@ enableAudioButton.addEventListener("click", function(){
         phoneScreen.style.display= "block"
     })
 })
+
+
 
 
 
