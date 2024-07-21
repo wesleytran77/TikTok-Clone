@@ -441,10 +441,34 @@ video{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 1px solid red;
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
 }
+
+.startingScreen h1{
+    font-size: 24px;
+    margin: 2rem 1.5rem;
+    width: 50%;
+    letter-spacing: 1px;
+}
+
+.startingScreen button{
+    margin: auto auto;
+    background-color: #ff0050;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 19px;
+    color: white;
+    font-size: 20px;
+}
+
+.startingScreen h2{
+    margin: 2rem 1.5rem;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+
