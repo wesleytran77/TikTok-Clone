@@ -1,4 +1,3 @@
-
 //handles zoom button
 var phoneScreen= document.querySelector(".phoneScreen")
 var zoomInButton= document.querySelector(".zoomIn")
@@ -188,5 +187,3 @@ enableAudioButton.addEventListener("click", function(){
 })
 
 
-// all we edited was taking off autoplay
-// it was working w
