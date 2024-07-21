@@ -7,14 +7,20 @@ let scale = 1
 
 zoomInButton.addEventListener('click', () => {
     scale += 0.5;
-    phoneScreen.style.transform = `translate(-50%, -50%) scale(${scale})`;
-    iphone.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    friendsPage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    profilePage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    inboxPage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    phoneScreen.style.transform = `translate(-50%, -50%) scale(${scale})`
+    iphone.style.transform = `translate(-50%, -50%) scale(${scale})`
 })
 
 zoomOutButton.addEventListener('click', () => {
     scale = Math.max(0.1, scale - 0.5);
-    iphone.style.transform = `translate(-50%, -50%) scale(${scale})`;
-    phoneScreen.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    friendsPage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    profilePage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    inboxPage.style.transform = `translate(-50%, -50%) scale(${scale})`
+    iphone.style.transform = `translate(-50%, -50%) scale(${scale})`
+    phoneScreen.style.transform = `translate(-50%, -50%) scale(${scale})`
 })
 
 
@@ -185,5 +191,6 @@ enableAudioButton.addEventListener("click", function(){
         phoneScreen.style.display= "block"
     })
 })
+
 
 
