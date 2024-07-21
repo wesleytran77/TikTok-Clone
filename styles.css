@@ -369,24 +369,43 @@ video{
 }
 
 
-
-
-
-
-
-
-.zoomIn{
+.instructions{
     position: absolute;
-    top: 90%;
-    left:90%;
+    top: 45%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+
+.instructions h1{
+    font-weight: 500;
+}
+
+.instructions p{
+    font-weight: 300;
+    margin-top: 1.2rem;
+}
+
+
+
+.controls{
+    position: absolute;
+    top: 86%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
     /* margin-top: 5rem; */
 }
 
-.zoomOut{
-    position: absolute;
-    top: 80%;
-    left: 90%;
+.controls button{
+    border: none;
+    color: rgb(67, 139, 241);
+    padding: 3px 15px;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);   
+    margin: 5px; 
 }
+
+
 
 .muteButton, .addFriend{
     fill: white;
@@ -398,6 +417,9 @@ video{
     width: 22px;
 }
 
+.muteButton{
+    visibility: hidden;
+}
 
 /*2 columns one for the right search profile pic and down to profile, other side we use two divs space between*/
 .footer{
@@ -459,17 +481,29 @@ video{
     margin: auto auto;
     background-color: #ff0050;
     border: none;
-    padding: 9px 12px;
+    padding: 7px 10px;
     border-radius: 19px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.startingScreen h2{
-    margin: 2rem 1.5rem;
+.logoHolder h2{
     letter-spacing: 1px;
     font-size: 24px;
+    margin-top: 6px;
+    /* margin-left: 3px; */
 }
 
+.logoHolder{
+    margin: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.logoHolder svg{
+    width: 40px;
+}
 
