@@ -27,10 +27,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     /*enable scrolling*/
-    scroll-snap-type: y mandatory; /* Define snapping on the y-axis */
+    scroll-snap-type: y mandatory; 
     overflow-y: auto;  
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */ 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
     display: none;
 }
 
@@ -92,7 +92,7 @@ a:active{
 
 
 .videoSection{
-    scroll-snap-align: start;     /* Snap to the start of the container */
+    scroll-snap-align: start;     
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -440,12 +440,11 @@ video{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*enable scrolling*/
-    scroll-snap-type: y mandatory; /* Define snapping on the y-axis */
-    overflow-y: auto;  
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */ 
     background-color: white;
     border: 1px solid red;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
