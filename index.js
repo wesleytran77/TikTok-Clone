@@ -186,3 +186,7 @@ enableAudioButton.addEventListener("click", function(){
         phoneScreen.style.display= "block"
     })
 })
+
+
+// all we edited was taking off autoplay
+// it was working w
