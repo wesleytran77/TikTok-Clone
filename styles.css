@@ -432,3 +432,19 @@ video{
     font-weight: 600;
 }
 
+.startingScreen{
+    height: 456px;
+    width: 260px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*enable scrolling*/
+    scroll-snap-type: y mandatory; /* Define snapping on the y-axis */
+    overflow-y: auto;  
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */ 
+    background-color: white;
+    border: 1px solid red;
+    z-index: 1000;
+}
