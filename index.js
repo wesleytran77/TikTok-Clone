@@ -169,5 +169,18 @@ profileTab.forEach(tab=>{
     })
 })
 
+//
+var enableAudioButton= document.querySelector(".enableAudio")
+var startingScreen= document.querySelector(".startingScreen")
+
+
+enableAudioButton.addEventListener("click", function(){
+    startingScreen.style.display= 'none'
+
+    video.forEach(vid => {
+        vid.muted = !vid.muted
+    })
+})
+
 
 
