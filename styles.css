@@ -5,6 +5,11 @@
     user-select: none;
 }
 
+video {
+    -webkit-user-drag: none; /* For Safari and Chrome */
+    user-drag: none; /* For other browsers */
+}
+
 body{
     background-color: white;
 }
