@@ -1,4 +1,4 @@
-//handles zoom button
+//handles zoom buttons
 var phoneScreen= document.querySelector(".phoneScreen")
 var zoomInButton= document.querySelector(".zoomIn")
 var zoomOutButton= document.querySelector(".zoomOut")
@@ -26,7 +26,7 @@ zoomOutButton.addEventListener('click', () => {
 })
 
 
-//handles follow creator feature
+//handles follow button 
 const followButton= document.querySelectorAll(".followButton")
 const plusSign= document.querySelector(".plusSign")
 const checkmark= document.querySelector(".checkmark")
@@ -77,23 +77,6 @@ favoriteButton.forEach(button => {
 })
 
 
-//mute button functionality
-const muteButton= document.querySelectorAll(".muteButton")
-const unmuteButton= document.querySelectorAll(".unmuteButton")
-const video = document.querySelectorAll('.myVideo')
-muteButton.forEach(button => {
-    button.addEventListener('click', function(){
-        video.forEach(vid => {
-            vid.muted = !vid.muted
-        })
-        // Hide mute button and show unmuted button
-        muteButton.forEach(button => {
-            button.style.visibility = 'hidden'
-        })
-    })  
-})
-
-
 // //plays next video if in frame and pauses old one
 document.addEventListener("DOMContentLoaded", function () {
     const videos = document.querySelectorAll("video")
@@ -140,7 +123,6 @@ const inboxPage= document.querySelector(".phoneScreen3")
 const profileTab= document.querySelectorAll(".profileTab")
 const profilePage= document.querySelector(".phoneScreen4") 
 
-
 friendsTab.forEach(tab=>{
     tab.addEventListener("click", function(){
         inboxPage.style.visibility= "hidden"
@@ -178,24 +160,15 @@ profileTab.forEach(tab=>{
 })
 
 
-
-
-//
+//handles starting screen 
 var enableAudioButton= document.querySelector(".enableAudio")
 var startingScreen= document.querySelector(".startingScreen")
 
-var volume= 'off'
-
 enableAudioButton.addEventListener("click", function(){
     startingScreen.style.display= 'none'
-
-    video.forEach(vid => {
-        volume = 'on'
-        // vid.muted = !vid.muted
-
-        phoneScreen.style.display= "block"
-    })
+    phoneScreen.style.display= "block"
 })
+
 
 
 
