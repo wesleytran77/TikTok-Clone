@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const video = entry.target
 
                 if (entry.isIntersecting) {
+                    video.currentTime = 0
                     video.play() // Play the video when it's visible
                     video.muted = false
                 } else {
@@ -168,6 +169,7 @@ enableAudioButton.addEventListener("click", function(){
     startingScreen.style.display= 'none'
     phoneScreen.style.display= "block"
 })
+
 
 
 
