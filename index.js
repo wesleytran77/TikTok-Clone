@@ -78,35 +78,7 @@ favoriteButton.forEach(button => {
 
 
 // //plays next video if in frame and pauses old one
-document.addEventListener("DOMContentLoaded", function () {
-    const videos = document.querySelectorAll("video")
 
-    if ('IntersectionObserver' in window) {
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                const video = entry.target
-
-                if (entry.isIntersecting) {
-                    video.play() // Play the video when it's visible
-                    video.muted = false
-                } else {
-                    video.pause() // Pause the video when it's not visible
-                    video.currentTime = 0 // Restart the video from the beginning
-                }
-            })
-        }
-
-        const observer = new IntersectionObserver(handleIntersection, {
-            threshold: 0.5 // Adjust the threshold as needed
-        })
-
-        videos.forEach(video => {
-            observer.observe(video)
-        })
-    } else {
-        console.log("IntersectionObserver is not supported by your browser.")
-    }
-})
 
 
 
@@ -160,15 +132,50 @@ profileTab.forEach(tab=>{
 })
 
 
+
+
+
 //handles starting screen 
 var enableAudioButton= document.querySelector(".enableAudio")
 var startingScreen= document.querySelector(".startingScreen")
 
 enableAudioButton.addEventListener("click", function(){
     startingScreen.style.display= 'none'
-    phoneScreen.style.display= "block"
+    phoneScreen.style.display= "block"    
 })
 
+
+
+//handles playing next video
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll("video");
+
+    if ('IntersectionObserver' in window) {
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                const video = entry.target;
+
+                if (entry.isIntersecting) {
+                    video.play(); // Play the video when it's visible
+                    video.muted = false; // Unmute the video when it's visible
+                } else {
+                    video.pause(); // Pause the video when it's not visible
+                    video.currentTime = 0; // Restart the video from the beginning
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5 // Adjust the threshold as needed
+        });
+
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+    } else {
+        console.log("IntersectionObserver is not supported by your browser.");
+    }
+});
 
 
 
