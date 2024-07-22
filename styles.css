@@ -445,7 +445,7 @@ video{
     padding: 7px 10px;
     border-radius: 19px;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     cursor: pointer;
 }
 
@@ -467,21 +467,6 @@ video{
 .logoHolder svg{
     width: 40px;
 }
-
-.placeholder{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: red;
-}
-
-
 
 body{
     display: flex;
