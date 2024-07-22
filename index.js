@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const video = entry.target
 
                 if (entry.isIntersecting) {
-                    video.currentTime = 0
                     video.play() // Play the video when it's visible
                     video.muted = false
                 } else {
