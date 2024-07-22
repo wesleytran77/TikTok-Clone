@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const video = entry.target;
 
                 if (entry.isIntersecting) {
-                    // video.currentTime = 0;
+                    video.currentTime = 0;
 
                     video.play(); // Play the video when it's visible
                     video.muted = false; // Unmute the video when it's visible
@@ -154,12 +154,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         videos.forEach(video => {
             observer.observe(video);
-            video.currentTime = 0
         });
     } else {
         console.log("IntersectionObserver is not supported by your browser.");
     }
 });
+
+
 
 
 
