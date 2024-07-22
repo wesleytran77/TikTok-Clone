@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (entry.isIntersecting) {
                     video.play() // Play the video when it's visible
+                    video.muted = false
                 } else {
                     video.pause() // Pause the video when it's not visible
                     video.currentTime = 0 // Restart the video from the beginning
@@ -183,16 +184,21 @@ profileTab.forEach(tab=>{
 var enableAudioButton= document.querySelector(".enableAudio")
 var startingScreen= document.querySelector(".startingScreen")
 
+var volume= 'off'
 
 enableAudioButton.addEventListener("click", function(){
     startingScreen.style.display= 'none'
 
     video.forEach(vid => {
-        vid.muted = !vid.muted
+        volume = 'on'
+        // vid.muted = !vid.muted
 
         phoneScreen.style.display= "block"
     })
 })
+
+
+
 
 
 
